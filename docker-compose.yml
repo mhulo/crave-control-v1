@@ -1,0 +1,39 @@
+version: "3"
+
+services:
+    web:
+        image: nginx:latest
+        ports:
+            - "80:80"
+            - "443:443"
+        volumes:
+            - ./code:/code
+            - ./site.conf:/etc/nginx/conf.d/default.conf
+        networks:
+            - code-network
+    php:
+        image: php:fpm
+        volumes:
+            - ./code:/code
+            - ./log.conf:/usr/local/etc/php-fpm.d/zz-log.conf
+        networks:
+            - code-network
+    cgate:
+        image: mhulo/rpi-cgate-1:latest
+        ports:
+            - "20023:20023"
+            - "20025:20025"
+            - "20026:20026"
+            - "20123:20123"
+        volumes:
+            - ./cgate-config/C-GateConfig.txt:/clipsal/cgate/config/C-GateConfig.txt
+            - ./cgate-config/access.txt:/clipsal/cgate/config/access.txt
+            - ./cgate-config/MYHOME.xml:/clipsal/cgate/tag/MYHOME.xml
+        networks:
+            code-network:
+                aliases:
+                    - cgate-container
+
+networks:
+    code-network:
+        driver: bridge
