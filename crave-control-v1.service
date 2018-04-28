@@ -1,4 +1,4 @@
-# /etc/systemd/system/crave-control-v1.service
+# /etc/systemd/system/crave-ctl-v1.service
 
 [Unit]
 Description=Docker Compose Opt Service
