@@ -3,7 +3,7 @@ Crave control is a responsive web based app that enables control of systems such
 
 This repo contains a base install that installs docker and docker-compose, and then installs nginx, php7, and clipsal c-gate and launches them into separate containers. The project is tested to work on the raspberry pi 3+ and Mac OSX. My understanding is that as of the raspberry pi 3, that the standard nginx and php images will work and this is what I have used. I have only tested this so far on a raspberry pi 3+ and on mac OSX.
 
-This project has been created in order to make setting up c-gate on docker, and integrating it with a web interface as simple as possible.
+This project has been created in order to make setting up c-gate on docker, and integrating it with a web interface as simple as possible. **This is not the full codebase for Crave Control - just the setup to install and launch nginx, php, and clipsal c-gate.**
 
 To install Crave Control, launch a terminal prompt either directly or using ssh and enter the following commands;
 
