@@ -29,4 +29,4 @@ Creating crave-ctl-1_cgate_1 ... done
 Creating crave-ctl-1_php_1   ... done
 ```
 
-If you then open up ip address of the machine you just installed this on your browser, you should see a response from c-gate.
+If you then open up the ip address of the machine you just installed this on your browser, eg. http://192.168.1.xx you should see a response from c-gate.
