@@ -9,6 +9,3 @@ sudo usermod -aG docker pi
 sudo apt-get install python-pip
 sudo pip install docker-compose
 sudo docker-compose --version
-
-sudo cp ~/cravectl-1/cravectl-1.service /etc/systemd/system/cravectl-1.service
-sudo systemctl enable cravectl-1
