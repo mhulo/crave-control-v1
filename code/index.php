@@ -14,7 +14,6 @@
         // we have a message so open a command-port, issue a get command and get the status of the whole network for lighting
         if ($msg == "get_all") { $msg = "get //" . $cbus_cgate_project . "/" . $cbus_cgate_network . "/" . $cbus_cgate_lighting_application . "/* level"; }
 
-//        $fp = fsockopen("pidocker4_cgate_1", "20023", $errno, $errstr);
         $fp = fsockopen("cgate-container", "20023", $errno, $errstr);
         if (!$fp) { $result2 = "could not connect6"; } // error: could not connect to command interface port
         else {
