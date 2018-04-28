@@ -19,8 +19,10 @@ You then need to log out and log back in so that the part of the install script 
 
 If all works you should see;
 
-```Creating crave-ctl-1_web_1   ... done
+```
+Creating crave-ctl-1_web_1   ... done
 Creating crave-ctl-1_cgate_1 ... done
-Creating crave-ctl-1_php_1   ... done```
+Creating crave-ctl-1_php_1   ... done
+```
 
 If you then open up ip address of the machine you just installed this on your browser, you should see a response from c-gate.
