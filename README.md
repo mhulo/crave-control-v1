@@ -5,7 +5,7 @@ This repo contains a base install that installs docker and docker-compose, and t
 
 This project has been created in order to make setting up c-gate on docker, and integrating it with a web interface as simple as possible. **This is not the full codebase for Crave Control - just the setup to install and launch nginx, php, and clipsal c-gate.**
 
-To install Crave Control, launch a terminal prompt either directly or using ssh and enter the following commands;
+To get everything started, launch a terminal prompt either directly or using ssh and enter the following commands;
 
 `sudo git clone https://github.com/mhulo/cravectl-1.git`
 
