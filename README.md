@@ -16,7 +16,9 @@ To install Crave Control, launch a terminal prompt either directly or using ssh 
 You then need to log out and log back in so that the part of the install script that adds pi as a user takes effect. After you log back in then type;
 
 `cd cravectl-1`
+
 `sudo sh install-service.sh`
+
 `docker-compose up -d`
 
 If all works you should see;
