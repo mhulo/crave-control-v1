@@ -8,7 +8,9 @@ This project has been created in order to make setting up c-gate on docker, and 
 To install Crave Control, launch a terminal prompt either directly or using ssh and enter the following commands;
 
 `sudo git clone https://github.com/mhulo/cravectl-1.git`
+
 `cd cravectl-1`
+
 `sudo sh install-docker.sh`
 
 You then need to log out and log back in so that the part of the install script that adds pi as a user takes effect. After you log back in then type;
