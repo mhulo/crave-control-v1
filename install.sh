@@ -10,5 +10,5 @@ sudo apt-get install python-pip
 sudo pip install docker-compose
 sudo docker-compose --version
 
-sudo cp /crave-ctl-v1/crave-ctl-v1.service /etc/systemd/system/crave-ctl-v1.service
-sudo systemctl enable crave-ctl-v1
+sudo cp /crave-ctl-1/crave-ctl-1.service /etc/systemd/system/crave-ctl-1.service
+sudo systemctl enable crave-ctl-1
