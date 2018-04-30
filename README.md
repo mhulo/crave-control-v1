@@ -11,6 +11,10 @@ To get everything started, launch a terminal prompt either directly or using ssh
 
 `cd cravectl-1`
 
+At this point you now will have some files and a cgate-config directory. You need to replace the MYHOME.XML with your own tags file that you would have had clipsal toolkit create for you when setting up the network.
+
+After you have a MYHOME.XML with your own XML config in it, you need to install docker by typing;
+
 `sudo sh install-docker.sh`
 
 You then need to log out and log back in so that the part of the install script that adds pi as a user takes effect. After you log back in then type;
@@ -31,12 +35,4 @@ Creating crave-ctl-1_php_1   ... done
 
 If you then open up the ip address of the machine you just installed this on your browser, eg. http://192.168.1.xx you should see a response from c-gate.
 
-At this stage c-gate should hopefully respond, but with an error because you still need to update ~/cravectl-1/c-gate-config/MYHOME.XML on the host with your actual tags file created by clipsal toolkit.
-
-After you update MYHOME.XML with your own configuration data, then type;
-
-`docker-compose down`
-
-`docker-compose up -d`
-
-This will close the previous containers and create new ones with the right configuration and will return the current status of each of the units on the c-bus network. From here, you can create your own php script (as I am) to create something amazing, or pretty easily edit the docker-compose yaml file to switch out php with something else such as node or python.
+At this stage c-gate should hopefully respond with the levels of everything in the lighting network. From here, you can create your own php script (as I am) to create something amazing, or pretty easily edit the docker-compose yaml file to switch out php with something else such as node or python and make something awesome with that.
