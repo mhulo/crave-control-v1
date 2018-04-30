@@ -33,6 +33,6 @@ Creating crave-ctl-1_cgate_1 ... done
 Creating crave-ctl-1_php_1   ... done
 ```
 
-If you then open up the ip address of the machine you just installed this on your browser, eg. http://192.168.1.xx you should see a response from c-gate.
+If you then open up the ip address of the machine you just installed this on your browser, eg. http://192.168.1.xx you should see a response from c-gate with the levels of everything in the lighting network.
 
-At this stage c-gate should hopefully respond with the levels of everything in the lighting network. From here, you can create your own php script (as I am) to create something amazing, or pretty easily edit the docker-compose yaml file to switch out php with something else such as node or python and make something awesome with that.
+From here, you can create your own php script (as I am) to create something amazing, or pretty easily edit the docker-compose yaml file to switch out php with something else such as node or python and make something awesome with that.
